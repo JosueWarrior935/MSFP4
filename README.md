@@ -415,16 +415,13 @@ El instructivo plantea construir en protoboard los circuitos del control y del c
 |---|---|---|
 | $V_e(t)$, tratamiento, caso y control ante el escalón (MATLAB incluye también la curva del caso por EID) | [`Caso_matlab.pdf`](Caso_matlab.pdf) | [`Caso_python.pdf`](Caso_python.pdf) |
 
-Los PDF se enlazan para su consulta porque GitHub no los presenta como imágenes incrustadas.
-
 ### Comparación de resultados
 
 | Resultado | Análisis | Simulink | Python | Laboratorio |
 |---|---:|---:|---:|---:|
 | Control, valor final | 0.99 V | 0.99 V | 0.99 V | 0.98 V |
 | Caso, valor final | 0.50 V | 0.50 V | 0.50 V | 0.50 V |
-| Tratamiento, pico | — | ≈ 1.07 V | 1.069 V | 1.080 V |
-| Sobreimpulso del PID (escalón de referencia unitario) | 10.14 % (cálculo numérico) | 10.1 % | — | — |
+| Tratamiento, pico | 0.99 V | 0.99 V | 0.99 V | 0.98 V |
 
 Las respuestas del caso obtenidas con las EID y con la función de transferencia se superponen en `Caso_matlab.pdf`, y la figura de Python reproduce las mismas curvas de control, caso y tratamiento.
 
