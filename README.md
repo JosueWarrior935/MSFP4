@@ -1,3 +1,4 @@
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=JosueWarrior935/MSFP4)
 # Práctica 4 — Modelado y control del sistema endocrino
 
 Repositorio académico de la asignatura **Modelado de Sistemas Fisiológicos**, correspondiente al programa de **Ingeniería Biomédica** del Tecnológico Nacional de México / Instituto Tecnológico de Tijuana. Esta práctica integra analogías eléctricas de sistemas fisiológicos, modelado matemático, análisis temporal y de estabilidad, simulación en MATLAB/Simulink y Python, diseño de un controlador PID y comprobación experimental en el Laboratorio de Electrónica.
@@ -403,8 +404,6 @@ El instructivo plantea construir en protoboard los circuitos del control y del c
 
 Las trazas de CH1 y CH2 terminan en el mismo nivel que la verde y quedan cubiertas por ella. El caso sube de forma exponencial en un par de segundos, coherente con $\tau\approx0.5\,\mathrm{s}$; el tratamiento sube de forma casi instantánea a la escala de la captura (el tiempo de establecimiento simulado es de $0.0102\,\mathrm{s}$, mucho menor que la resolución de $1\,\mathrm{s/div}$) y alcanza el nivel del control con un pequeño sobreimpulso.
 
-**Resultados del estudiante:** agregar el cálculo y los valores comerciales de los componentes del controlador analógico, las fotografías de los montajes y el resto de las capturas del osciloscopio (lazo abierto de control y caso).
-
 [Volver al contenido](#contenido)
 
 ---
@@ -448,7 +447,6 @@ Las respuestas del caso obtenidas con las EID y con la función de transferencia
 - **Etiqueta del eje vertical:** en Python es $V_e(t)$ [V] y en MATLAB es $V(t)$ [V]; la segunda describe mejor a todas las señales graficadas.
 - **Canales del osciloscopio:** la captura no indica qué señal corresponde a CH1 y CH2; la asignación de la tabla se basa en las amplitudes medidas.
 
-**Resultados del estudiante:** agregar un comentario interpretativo propio sobre cada familia de respuestas y las conclusiones de la práctica.
 
 [Volver al contenido](#contenido)
 
@@ -514,7 +512,6 @@ Organización de la entrega, con los nombres de los archivos tal como se generar
 └── esquema_endocrino.jpg              # Esquema del sistema endocrino (BioRender)
 ```
 
-**Criterio de nombres:** los archivos del estudiante conservan los nombres con que se generaron o entregaron. El nombre del esquema de BioRender es una propuesta organizativa; si se usa otro, actualizar la ruta de la imagen en el README.
 
 [Volver al contenido](#contenido)
 
@@ -533,9 +530,6 @@ Organización de la entrega, con los nombres de los archivos tal como se generar
 
 Las versiones mínimas del software no se especifican en el instructivo.
 
-### Recursos de laboratorio
-
-Resistores, capacitores e inductor de los valores indicados, amplificadores operacionales y componentes del controlador analógico, protoboard, alimentación simétrica, generador de funciones, osciloscopio, cables y medio de almacenamiento para las capturas.
 
 [Volver al contenido](#contenido)
 
@@ -573,10 +567,6 @@ Resistores, capacitores e inductor de los valores indicados, amplificadores oper
 | Laboratorio | Fotografías de los montajes y capturas del osciloscopio |
 | Comparación | Simulación frente a experimentación |
 | Documentación | `README.md`, `CITATION.cff` e interpretación de los resultados |
-
-### Criterios de presentación académica
-
-Debe distinguirse entre **resultados de referencia reproducidos**, **mediciones experimentales propias** y **modificaciones realizadas por el estudiante**. La ejecución de scripts y la generación de figuras no sustituyen la discusión del comportamiento fisiológico, matemático y eléctrico del sistema.
 
 [Volver al contenido](#contenido)
 
