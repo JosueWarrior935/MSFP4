@@ -425,24 +425,6 @@ El instructivo plantea construir en protoboard los circuitos del control y del c
 
 Las respuestas del caso obtenidas con las EID y con la función de transferencia se superponen en `Caso_matlab.pdf`, y la figura de Python reproduce las mismas curvas de control, caso y tratamiento.
 
-### Aspectos para discutir
-
-- Cómo $C$ y $R_2$ determinan tanto el valor final ($R_2/(R_1+R_2)$) como la rapidez de la respuesta del control y del caso.
-- Efecto del PID: elimina el error en estado estacionario y acelera la respuesta del caso, a costa de un sobreimpulso cercano a 10 %.
-- Coincidencia entre las EID, la función de transferencia, el circuito equivalente, MATLAB, Python y el osciloscopio.
-- Posibles diferencias entre simulación y laboratorio: tolerancias de resistores, capacitores e inductores; resistencia interna del inductor; tolerancia y resistencia serie equivalente del capacitor; valores comerciales del controlador; no idealidad de los amplificadores operacionales; limitaciones de los instrumentos; y la aproximación experimental del escalón.
-- Limitaciones de la analogía fenomenológica.
-
-### Notas de verificación
-
-- **Valor final y error:** en la hoja 2 de `AnalisisMatematico.pdf`, el límite rotulado como "Error", $\lim_{s\to0}\left[1-G(s)\right]$, se iguala a $R_2/(R_1+R_2)$, que es el valor final ($0.99$ y $0.50$). El error en estado estacionario es $R_1/(R_1+R_2)$, es decir, $0.0099$ para el control y $0.50$ para el caso.
-- **Columna *Block* de `ParametrosControlador.pdf`:** muestra los valores por defecto del bloque ($P=1$, $I=1$, $D=0$, $N=100$), porque la captura se tomó antes de actualizar el bloque; las ganancias de esta práctica son las de la columna *Tuned*, que son las del script de Python.
-- **Número de control en el script:** el encabezado de `Guerrero24210583P4.py` dice `2421058` (falta un dígito) y usa el nombre con acentos; el número correcto es 24210583.
-- **Nombre de la figura de Python:** el script guarda la figura como `Caso.pdf`; en esta entrega aparece como `Caso_python.pdf`.
-- **Etiqueta del eje vertical:** en Python es $V_e(t)$ [V] y en MATLAB es $V(t)$ [V]; la segunda describe mejor a todas las señales graficadas.
-- **Canales del osciloscopio:** la captura no indica qué señal corresponde a CH1 y CH2; la asignación de la tabla se basa en las amplitudes medidas.
-
-
 [Volver al contenido](#contenido)
 
 ---
