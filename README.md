@@ -397,12 +397,10 @@ El instructivo plantea construir en protoboard los circuitos del control y del c
 
 | Canal | $V_{pp}$ medido | Interpretación |
 |---|---:|---|
-| CH1 | 980 mV | Mismo nivel que el control (0.99 V simulado) |
+| CH1 | 980 mV | Mismo nivel que el Caso, con controlador (tratamiento) (0.99 V simulado) |
 | CH2 | 980 mV | Mismo nivel que el control (0.99 V simulado) |
 | CH3 (naranja) | 500 mV | Caso, sin controlador (0.50 V simulado) |
-| CH4 (verde) | 1.080 V | Tratamiento con PID, incluyendo el sobreimpulso (1.069 V simulado) |
-
-Las trazas de CH1 y CH2 terminan en el mismo nivel que la verde y quedan cubiertas por ella. El caso sube de forma exponencial en un par de segundos, coherente con $\tau\approx0.5\,\mathrm{s}$; el tratamiento sube de forma casi instantánea a la escala de la captura (el tiempo de establecimiento simulado es de $0.0102\,\mathrm{s}$, mucho menor que la resolución de $1\,\mathrm{s/div}$) y alcanza el nivel del control con un pequeño sobreimpulso.
+| CH4 (verde) | 1.080 V | Señal de entrada (1.069 V simulado) |
 
 [Volver al contenido](#contenido)
 
