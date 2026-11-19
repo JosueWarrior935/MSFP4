@@ -49,7 +49,7 @@ La práctica modela un compartimento endocrino simplificado con un circuito elé
 
 Se formulan las **ecuaciones integro-diferenciales (EID)** con las leyes de Kirchhoff y se obtiene la función de transferencia $G(s)=V_s(s)/V_e(s)$. Control y caso comparten $R_1$ y $L$ y difieren en $C$ y $R_2$: el control tiene $C=1\,\mu\mathrm{F}$ y $R_2=100\,\mathrm{k}\Omega$, y el caso $C=1000\,\mu\mathrm{F}$ y $R_2=1\,\mathrm{k}\Omega$. Ante un escalón unitario, el control alcanza $0.99\,\mathrm{V}$ casi de inmediato y el caso solo $0.50\,\mathrm{V}$ y con una dinámica unas 500 veces más lenta. Para reducir esa diferencia se diseña un **controlador PID con retroalimentación negativa** que toma la respuesta del control como referencia. Los resultados se obtienen con MATLAB/Simulink (modelo `sistema2020_4`), se simulan en sus tres representaciones (EID, función de transferencia y circuito equivalente), se reproducen en Python y se comparan con una captura del osciloscopio del laboratorio.
 
-**Palabras clave:** circuito RLC; controlador PID; sistema endocrino; modelado de sistemas fisiológicos; MATLAB; Simulink; Simscape Electrical; Python; simulación *in silico*; instrumentación electrónica.
+**Palabras clave:** circuito RLC; controlador PID; sistema endocrino; modelado de sistemas fisiológicos; MATLAB; Simulink; Simscape Electrical; Python; simulación; instrumentación electrónica.
 
 [Volver al contenido](#contenido)
 
@@ -391,7 +391,7 @@ Para ejecutarlo se necesitan las bibliotecas `numpy`, `control` y `matplotlib` (
 
 El instructivo plantea construir en protoboard los circuitos del control y del caso con los valores comerciales indicados, aproximar el escalón unitario con el generador de funciones y registrar con el osciloscopio $V_e(t)$ y $V_s(t)$, primero en lazo abierto y después con el controlador analógico (alimentación simétrica de los amplificadores operacionales) en lazo cerrado.
 
-![Captura del osciloscopio con las respuestas del control, el caso y el tratamiento ante el escalón](Se_alLab.jpeg)
+![Captura del osciloscopio con las respuestas del control, el caso y el tratamiento ante el escalón](SeñalLab.jpeg)
 
 *Captura del osciloscopio (base de tiempo de 1 s/div, 500 mV/div en los cuatro canales, 500 S/s).*
 
